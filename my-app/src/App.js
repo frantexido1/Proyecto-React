@@ -1,22 +1,13 @@
-import './App.css';
-import theme from './temaConfig';
-import { ThemeProvider } from '@mui/material/styles';
-// import { makeStyles } from '@mui/material/styles';
-// import { Button } from '@mui/material/'
-// import Typography from '@mui/material/Typography'
+import React from 'react';
+import { ThemeProvider } from '@mui/material';
+import { Navbar } from './Components.navbar/Navbar';
+import theme from './configuracionMUI/theme';
+
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <header>
-
-
-
-
-
-
-        
-      </header>
+      <Navbar/>
     </ThemeProvider>
   );
 }
