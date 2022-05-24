@@ -1,5 +1,4 @@
 import {Grid,Box} from '@mui/material/';
-import theme from '../theme';
 import "./cines4D.css"
 
 

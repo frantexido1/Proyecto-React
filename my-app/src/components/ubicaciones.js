@@ -1,6 +1,5 @@
-import {Box, Grid, Button} from '@mui/material';
+import {Box, Grid, Button,useTheme} from '@mui/material';
 import "./cines4D.css";
-import react from "react";
 import {useState} from "react";
 
 const cines={
@@ -30,6 +29,7 @@ const cines={
 
 
 export default function Ubicaciones() {
+    const theme = useTheme();
     const [ubi,setUbi]=useState(cines.avellaneda.url)
     return (
         <Box className='caja'>
@@ -38,11 +38,11 @@ export default function Ubicaciones() {
                 <iframe src={ubi} widht="100%" height="100%" border="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='mapa'></iframe>
                 </Grid>
                 <Grid item xs={4}>
-                    <Button onClick={()=>setUbi(cines.avellaneda.url) }>Cinépolis Avellaneda</Button>
-                    <Button onClick={()=>setUbi(cines.merlo.url) }>Cinépolis Merlo</Button>
-                    <Button onClick={()=>setUbi(cines.recoleta.url) }>Cinepolis Recoleta</Button>
-                    <Button onClick={()=>setUbi(cines.pilar.url) }>Cinépolis Pilar</Button>
-                    <Button onClick={()=>setUbi(cines.lujan.url) }>Cinépolis Luján</Button>
+                    <Button onClick={()=>setUbi(cines.avellaneda.url)} color="secondary">Cinépolis Avellaneda</Button>
+                    <Button onClick={()=>setUbi(cines.merlo.url)} color="secondary">Cinépolis Merlo</Button>
+                    <Button onClick={()=>setUbi(cines.recoleta.url)} color="secondary">Cinepolis Recoleta</Button>
+                    <Button onClick={()=>setUbi(cines.pilar.url)} color="secondary">Cinépolis Pilar</Button>
+                    <Button onClick={()=>setUbi(cines.lujan.url)} color="secondary">Cinépolis Luján</Button>
                 </Grid>
             </Grid>
         </Box>
