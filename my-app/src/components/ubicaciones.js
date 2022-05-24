@@ -30,9 +30,8 @@ const cines={
 
 
 export default function Ubicaciones() {
-    const [ubi, setUbi] = useState (cines.avellaneda.url);
+    const [ubi,setUbi]=useState(cines.avellaneda.url)
     return (
-
         <Box className='caja'>
             <Grid container spacing={3}>
                 <Grid item xs={8}>
