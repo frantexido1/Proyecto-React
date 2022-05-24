@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from '@mui/material';
-import { Navbar } from './Components.navbar/Navbar';
+import { Navbar } from './Components/Navbar';
 import theme from './configuracionMUI/theme';
 
 
