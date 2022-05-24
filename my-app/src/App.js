@@ -1,6 +1,6 @@
 import './App.css';
 import Cines4d from './components/cines4D';
-import Ubicaciones from './components/ubicaciones';
+import Ubicaciones from './components/ubicaciones.js';
 import {Container} from '@mui/material';
 
 function App() {
@@ -17,5 +17,4 @@ function App() {
     
   );
 }
-
 export default App;

@@ -1,6 +1,6 @@
 import {Box, Grid, Button} from '@mui/material';
 import "./cines4D.css";
-import react from "react.useState";
+import react from "react";
 import {useState} from "react";
 
 const cines={
@@ -27,10 +27,12 @@ const cines={
     }
 
 
-const [ubi, setUbi] = useState (cines.avellaneda.url);
+
 
 export default function Ubicaciones() {
+    const [ubi, setUbi] = useState (cines.avellaneda.url);
     return (
+
         <Box className='caja'>
             <Grid container spacing={3}>
                 <Grid item xs={8}>
