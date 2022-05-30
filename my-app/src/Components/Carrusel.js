@@ -1,10 +1,6 @@
-// import React, { useState } from 'react';
-// import { useTheme } from '@mui/material/';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-// import "./Carrusel.css";
-// import {datosCarrusel} from '../Components/Data.js';
 import "./Cards.css";
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';

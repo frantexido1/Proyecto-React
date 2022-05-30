@@ -10,6 +10,7 @@ import Peliculas from "./Components/db.json"
 
 
 
+
 function App() {
   return (
      <div classname="App">
@@ -19,7 +20,7 @@ function App() {
 
 
     <Container sx={{ marginY: 5}}>
-
+    
 
     {Peliculas.map((pelicula) => (
       <>
@@ -31,7 +32,9 @@ function App() {
   
      </>
      ))};
+    
     </Container>
+
     </div>
   );
 }
