@@ -1,5 +1,4 @@
 import {Box, Grid, Button,useTheme} from '@mui/material';
-import "./cines4D.css";
 import {useState} from "react";
 
 const cines={
@@ -32,7 +31,15 @@ export default function Ubicaciones() {
     const theme = useTheme();
     const [ubi,setUbi]=useState(cines.avellaneda.url)
     return (
-        <Box className='caja'>
+        <Box  sx={{
+            margin: "0",
+            padding: "15px",
+            alignItems:"center",
+            borderRadius:"10px",
+            boxShadow:"10px",
+            backgroundColor:"#251F1F",
+            textAlign:"center"
+        }}>
             <Grid container spacing={3}>
                 <Grid item xs={8}>
                 <iframe src={ubi} widht="100%" height="100%" border="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='mapa'></iframe>

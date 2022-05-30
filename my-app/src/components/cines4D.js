@@ -1,11 +1,18 @@
 import {Grid,Box} from '@mui/material/';
-import "./cines4D.css"
 
 
 export default function Cines4d() {
     return (
       <>
-        <Box  className="caja">
+        <Box  sx={{
+            margin: "0",
+            padding: "15px",
+            alignItems:"center",
+            borderRadius:"10px",
+            boxShadow:"10px",
+            backgroundColor:"#251F1F",
+            textAlign:"center"
+        }}>
           <Grid container spacing={3}>
             <Grid item xs={8}>
               <Box  sx={{ backgroundColor: "rgba(94, 94, 94, 0.5)",padding:"10px"}}>

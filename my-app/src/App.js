@@ -1,8 +1,8 @@
-import Cines4d from './components/cines4D';
-import Ubicaciones from './components/ubicaciones.js';
+import Cines4d from './Components/cines4D.js';
+import Ubicaciones from './Components/ubicaciones.js';
 import {Container} from '@mui/material';
 import { ThemeProvider } from '@mui/material';
-import { Navbar } from './components/Navbar';
+import { Navbar } from './Components/Navbar';
 import theme from './configuracionMUI/theme';
 
 function App() {

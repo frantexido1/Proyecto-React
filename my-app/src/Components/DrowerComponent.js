@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Drawer, List, ListItem, ListItemText, ListItemIcon, Container} from '@mui/material/';
+import { Drawer, List, ListItem, ListItemText, ListItemIcon} from '@mui/material/';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import MovieIcon from '@mui/icons-material/Movie';
