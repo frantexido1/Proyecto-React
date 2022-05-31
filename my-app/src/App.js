@@ -2,8 +2,8 @@ import React from 'react';
 import { ThemeProvider } from '@mui/material';
 import { Navbar } from './Components/Navbar';
 import theme from './configuracionMUI/theme';
-// import Cards from './Components/Cards';
-import {Carrusel} from './Components/Carrusel';
+import Cards from './Components/Cards';
+// import {Carrusel} from './Components/Carrusel';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Peliculas from "./Components/db.json"
@@ -16,7 +16,7 @@ function App() {
      <div classname="App">
     <ThemeProvider theme={theme}>
       <Navbar/>
-    </ThemeProvider> 
+    
 
 
     <Container sx={{ marginY: 5}}>
@@ -24,9 +24,9 @@ function App() {
 
     {Peliculas.map((pelicula) => (
       <>
-       <Grid >
+       <Grid container spacing={5}>
        { pelicula.funciones.map((funcion, index) => (
-        <Carrusel funcion={funcion} key={index}/>
+        <Cards funcion={funcion} key={index}/>
        ))}
        </Grid>
   
@@ -34,7 +34,7 @@ function App() {
      ))};
     
     </Container>
-
+    </ThemeProvider> 
     </div>
   );
 }
