@@ -7,7 +7,7 @@ import { Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 
 const DrawerComponent = () => {
-    const [openDrawer, setOpenDrawer] = useState(true);
+    const [openDrawer, setOpenDrawer] = useState(false);
 
     return (
         <>
