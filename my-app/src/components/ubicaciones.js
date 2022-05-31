@@ -41,10 +41,10 @@ export default function Ubicaciones() {
             textAlign:"center"
         }}>
             <Grid container spacing={3}>
-                <Grid item xs={8}>
-                <iframe src={ubi} widht="100%" height="100%" border="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='mapa'></iframe>
+                <Grid item xs={12} sm={8}>
+                    <iframe src={ubi} maxWidht="100%" maxHeight="100%" display="block" border="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='mapa'></iframe>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={4}>
                     <Button onClick={()=>setUbi(cines.avellaneda.url)} color="secondary">Cinépolis Avellaneda</Button>
                     <Button onClick={()=>setUbi(cines.merlo.url)} color="secondary">Cinépolis Merlo</Button>
                     <Button onClick={()=>setUbi(cines.recoleta.url)} color="secondary">Cinepolis Recoleta</Button>
