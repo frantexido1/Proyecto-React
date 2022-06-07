@@ -4,11 +4,13 @@ import {Container} from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import { Navbar } from './Components/Navbar';
 import theme from './configuracionMUI/theme';
+import Slider from "./Components/Slider";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar/>
+      <Slider />
       <Container maxWidth="md">
         <Cines4d />
       </Container>
