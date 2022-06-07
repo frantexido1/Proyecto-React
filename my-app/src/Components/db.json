@@ -7,6 +7,7 @@
       "price": "$200",
       "category": "Acción",
       "img": "https://http2.mlstatic.com/D_NQ_NP_772763-MLA32388572990_102019-O.jpg"
+      
     },
     {
         "id": 2,
@@ -14,6 +15,7 @@
         "price": "$200",
         "category": "Terror",
         "img": "https://www.techgames.com.mx/wp-content/uploads/2021/12/Scream-5-poster-elenco.jpg"
+        
       },
       {
         "id": 3,
@@ -21,6 +23,7 @@
         "price": "$200",
         "category": "Acción",
         "img": "https://imagenes.gatotv.com/categorias/peliculas/posters/ambulancia_2022.jpg"
+        
       },
       {
         "id": 4,
@@ -28,7 +31,7 @@
         "price": "$200",
         "category": "Acción",
         "img": "https://img.aullidos.com/imagenes/caratulas/hombre-del-norte-poster-sp.jpg"
-        
+            
       },
       {
         "id": 5,
@@ -44,8 +47,8 @@
         "price": "$200",
         "category": "Terror",
         "img": "https://http2.mlstatic.com/D_NQ_NP_809718-MLA41881336198_052020-O.jpg"
-      
-    },
+        
+      },
       {
         "id": 7,
         "title": "Interstellar",
