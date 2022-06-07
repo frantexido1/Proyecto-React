@@ -4,6 +4,7 @@ import {Container} from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import { Navbar } from './Components/Navbar';
 import theme from './configuracionMUI/theme';
+import ButtonModal from './Components/ButtonModal.js';
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
       <Container maxWidth="md">
           <Ubicaciones/>
       </Container>
+      <ButtonModal/>
     </ThemeProvider>
-
   );
 }
 
