@@ -1,5 +1,6 @@
-import { Button,Modal,Box,useTheme, TextField} from "@mui/material";
+import { Button,Modal,Box,useTheme} from "@mui/material";
 import { useState } from "react";
+import Entradas from "./Entradas";
 import SelectModal from "./SelectModal";
 import SelectModal2 from "./SelectModal2";
 
@@ -20,6 +21,7 @@ export default function ButtonModal(){
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    // eslint-disable-next-line no-unused-vars
     const theme = useTheme();
 
     const options=["Cinépolis Avellaneda","Cinépolis Merlo","Cinépolis Recoleta","Cinépolis Pilar","Cinépolis Lujan"];
@@ -40,7 +42,8 @@ export default function ButtonModal(){
                 <SelectModal option={options} title="Seleccione Cine"/>
                 <SelectModal2/>
                 <SelectModal option={horarios} title="Seleccione Horario" tamaño={{width:"50%"}}/>
-                {/* <TextField inputProps={{ inputMode: 'numeric', pattern: '[0 - 9]*' }} fullWidth label="Ingrese la Cantidad de Entradas" /> */}
+                <Entradas/>
+                <Button onClick={handleClose} color="secondary">Enviar Al Carrito</Button>
                 </Box> 
             </Modal>
 

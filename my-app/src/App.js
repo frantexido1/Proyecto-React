@@ -1,10 +1,9 @@
 import Cines4d from './Components/cines4D.js';
 import Ubicaciones from './Components/ubicaciones.js';
-import {Container} from '@mui/material';
-import { ThemeProvider } from '@mui/material';
+import { ThemeProvider,Container } from '@mui/material';
 import { Navbar } from './Components/Navbar';
 import theme from './configuracionMUI/theme';
-import ButtonModal from './Components/ButtonModal.js';
+import ButtonModal from './Components/ButtonModal/ButtonModal.js';
 
 function App() {
   return (

@@ -2,15 +2,13 @@ import { InputLabel, FormControl,Select,MenuItem} from "@mui/material";
 import { useState } from "react";
 
 export default function SelectModal2(){
-    const [cine,setCine]=useState("");
+    const [fecha,setFecha]=useState("");
     const handleChange = (e) => {
-      setCine(e.target.value);
+      setFecha(e.target.value);
     };
     let fechaActual= new Date();
     const diaDeSemana=["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"];
     const mes=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
-    
-
 
     return (
         <FormControl color="secondary" sx={{width:"50%"}}>
@@ -18,7 +16,7 @@ export default function SelectModal2(){
           <Select 
           labelId="demo-simple-select-label" 
           id="demo-simple-select" 
-          value={cine} 
+          value={fecha} 
           label="Seleccione Dia" 
           onChange={handleChange}
           sx={{marginBottom:"30px",color:"text.secondary",marginRight:"10px"}}
