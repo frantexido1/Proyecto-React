@@ -1,4 +1,5 @@
-import { Button,Modal,Box,useTheme} from "@mui/material";
+import { Button,Modal,Box,useTheme, Grid} from "@mui/material";
+import { Container } from "@mui/system";
 import { useState } from "react";
 import Entradas from "./Entradas";
 import SelectModal from "./SelectModal";
@@ -9,7 +10,6 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: "900px",
     bgcolor: 'background.paper',
     borderRadius: '10px',
     boxShadow: 24,
@@ -28,25 +28,23 @@ export default function ButtonModal(){
     const horarios=["10:00","11:00","12:00","14:00","15:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00"];
 
     return (
-
-          <div>
-            <Button onClick={handleOpen} color="secondary">Comprar Entradas</Button>
-
+      <div>
+          <Button onClick={handleOpen} color="secondary">Comprar Entradas</Button>
             <Modal
               open={open}
               onClose={handleClose}
               aria-labelledby="modal-modal-title"
               aria-describedby="modal-modal-description"
             >
-               <Box sx={style}>
-                <SelectModal option={options} title="Seleccione Cine"/>
-                <SelectModal2/>
-                <SelectModal option={horarios} title="Seleccione Horario" tamaño={{width:"50%"}}/>
-                <Entradas/>
-                <Button onClick={handleClose} color="secondary">Enviar Al Carrito</Button>
-                </Box> 
+               <Container maxWidth="lg" sx={style}>
+                  <SelectModal option={options} title="Seleccione Cine"/>                  
+                  <SelectModal2/>
+                  <SelectModal option={horarios} title="Seleccione Horario" tamaño={{width:"50%"}}/>                  
+                  <Entradas/>
+                  <Button onClick={handleClose} color="secondary">Enviar Al Carrito</Button>
+                </Container> 
             </Modal>
+      </div>
 
-          </div>
     )
 }

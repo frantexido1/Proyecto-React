@@ -14,12 +14,12 @@ export default function Cines4d() {
             textAlign:"center"
         }}>
           <Grid container spacing={3}>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={8}>
               <Box  sx={{ backgroundColor: "rgba(94, 94, 94, 0.5)",padding:"10px"}}>
               <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Diagrama_de_teatro_4D.jpg/330px-Diagrama_de_teatro_4D.jpg' alt='' minWidth="100%" maxHeight="100%" />
               </Box>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Box sx={{ color:"rgb(255,255,255)",fontSize:"auto", textAlign:"center",minWidth:"100%", maxHeight:"100%"}}>
               <h1>CINES 4D</h1>
               <p>
