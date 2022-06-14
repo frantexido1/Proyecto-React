@@ -9,10 +9,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar/>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Cines4d />
       </Container>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
           <Ubicaciones/>
       </Container>
       <ButtonModal/>
