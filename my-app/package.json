@@ -15,13 +15,8 @@
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^3.0.1",
-<<<<<<< HEAD
     "sweetalert": "^2.1.2",
     "sweetalert2": "^11.4.17",
-=======
-    "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1",
->>>>>>> 9e14ae17b1c04befa48845cf165a37b3f278c4ea
     "web-vitals": "^2.1.4"
   },
   "scripts": {
