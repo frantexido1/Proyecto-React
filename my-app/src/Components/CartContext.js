@@ -46,11 +46,12 @@ export const CartProvider = ({children}) => {
                    cartItems.filter(peliculaInCart => peliculaInCart.id !== pelicula.id)
                );
             } else {
-                setCartItems((peliculaInCart) => {
+                setCartItems(
+                    cartItems.map((peliculaInCart) => {
                     if(peliculaInCart.id === pelicula.id) {
                     return {...inCart, amount: inCart.amount - 1}
                 } else return peliculaInCart
-                })
+                }))
             }
         };
 
