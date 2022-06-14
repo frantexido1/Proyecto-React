@@ -14,7 +14,7 @@ export const Navbar = () => {
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
     return (
         <>
-        <AppBar color= 'primary' position='fixed'>
+        <AppBar color= 'primary' position='sticky'>
                 <Toolbar>
                 <MovieIcon sx={{color:'#ff7700', fontSize: 50}}/>
                 <Typography variant="overline" display="block" gutterBottom center sx={{marginLeft: 1, color: '#FFFFFF', fontSize:20, fontFamily:300}}>Cinema </Typography>
