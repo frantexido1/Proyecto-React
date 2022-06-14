@@ -1,59 +1,28 @@
 import "./Cards.css";
-import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
-import { createTheme, ThemeProvider, Paper, Box, Grid, Typography, IconButton, Stack } from '@mui/material';
-import { useContext } from "react";
-import { CartContext } from "./CartContext";
+import {  ThemeProvider, Paper, Box, Grid, Typography, Stack,useTheme } from '@mui/material';
+import ButtonModal from "./ButtonModal/ButtonModal";
 
-
-const theme = createTheme({
- components: {
-   MuiTypography: {
-     variants: [
-       {
-        props: {
-         variant: "h6"
-       },
-       style: { 
-        
-       },
-      },
-      {
-       props: {
-         variant: "body1"
-        
-       },
-       style: { 
-         
-       },
-      },
-    ],
-   },
-  },
-});
 
 
 
 const Cards = ({funcion}) => {
 
-  const {addItemToCart} = useContext(CartContext)
-
+  const theme = useTheme();
   return (
       
-     <Grid zeroMinWidth item xs={3}>
+     <Grid zeroMinWidth item xs={3} >
        <ThemeProvider theme={theme}>
-        <Paper elevation={3} square >
+        <Paper elevation={5} square sx={{color:"text.secondary"}}>
            <img src={funcion.img} alt="Pelicula" className="img"/>
-          <Box paddingX={1}>
+          <Box paddingX={1} >
 
-            <Typography noWrap variant="h6" component="h2" textAlign={"center"} >
+            <Typography noWrap variant="h6" component="h2" textAlign="center" >
              {funcion.title}  
             </Typography>
 
 
             <Stack alignItems="center" paddingY={0.50}>
-                  <IconButton aria-label="ConfirmationNumberIcon" onClick={() => addItemToCart(funcion)}>
-                     <ConfirmationNumberIcon sx={{ color: '#FF7700' }} />
-                   </IconButton>  
+                  <ButtonModal/>
             </Stack>
 
 

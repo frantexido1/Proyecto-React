@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { Drawer, List, ListItem, ListItemText, ListItemIcon, Container} from '@mui/material/';
-import IconButton from '@mui/material/IconButton';
+import { Drawer, List, ListItem, ListItemText, ListItemIcon,Typography,IconButton} from '@mui/material/';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import MovieIcon from '@mui/icons-material/Movie';
-import { Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 
 const DrawerComponent = () => {
