@@ -2,7 +2,7 @@ import { Typography, IconButton } from '@mui/material'
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close';
-import swal from './sweetAlert';
+import swal from "sweetalert";
 
 
 
