@@ -6,7 +6,10 @@ import IconButton from '@mui/material/IconButton'
 import MovieIcon from '@mui/icons-material/Movie';
 import DrawerComponent from './DrowerComponent';
 
+
+
 export const Navbar = () => {
+
     const [value, setValue] = useState(0);
     const handleClickTab = (e, newValue) => {setValue(newValue);};
     //responsive
@@ -35,17 +38,17 @@ export const Navbar = () => {
                                             <SearchOutlinedIcon sx={{ fontSize: 25, color: '#FF7700' }}/>
                                         </IconButton>
                                     </ListItemButton>
+
+
                                     <ListItemButton>
-                                        <IconButton aria-label="buy" color='secondary' href='#'>
+                                        <IconButton aria-label="buy" color='secondary' href='#' >
                                             <ShoppingCartOutlinedIcon sx={{ fontSize: 25,color: '#FF7700' }}/>
-                                        </IconButton>
+                                        </IconButton>              
                                     </ListItemButton>
-                        </>
-                        )}            
+                            </>
+                            )}               
                 </Toolbar>
             </AppBar>
-
-            <DrawerComponent />
         </>
     )
 }
