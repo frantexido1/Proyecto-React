@@ -1,5 +1,5 @@
 import React from "react";
-import "../Components/imageSlider";
+import "./imageSlider";
 
 function Dots({activeIndex, onclick, imageSlider}) {
     return(

@@ -4,7 +4,7 @@ import {Container} from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import { Navbar } from './Components/Navbar';
 import theme from './configuracionMUI/theme';
-import Slider from "./Components/Slider";
+import Slider from "./Components/Slider/Slider";
 
 function App() {
   return (
