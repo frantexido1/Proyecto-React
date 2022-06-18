@@ -1,8 +1,8 @@
-import Sonic from "../assets/Sonic.jpg";
-import Strange from "../assets/Strange.jpg";
-import Scream from "../assets/Scream.jpg";
-import Venom from "../assets/Venom.jpg";
-import Morbius from "../assets/Morbius.jpg";
+import Sonic from "./Image/Sonic.jpg";
+import Strange from "./Image/Strange.jpg";
+import Scream from "./Image/Scream.jpg";
+import Venom from "./Image/Venom.jpg";
+import Morbius from "./Image/Morbius.jpg";
 
 const Imagenes = [
     { 
