@@ -1,8 +1,6 @@
 import "./Cards.css";
 import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 import { createTheme, ThemeProvider, Paper, Box, Grid, Typography, IconButton, Stack } from '@mui/material';
-import { useContext } from "react";
-import { CartContext } from "./CartContext";
 
 
 const theme = createTheme({
@@ -35,8 +33,6 @@ const theme = createTheme({
 
 const Cards = ({funcion}) => {
 
-  const {addItemToCart} = useContext(CartContext)
-
   return (
       
      <Grid zeroMinWidth item xs={3}>
@@ -51,7 +47,7 @@ const Cards = ({funcion}) => {
 
 
             <Stack alignItems="center" paddingY={0.50}>
-                  <IconButton aria-label="ConfirmationNumberIcon" onClick={() => addItemToCart(funcion)}>
+                  <IconButton aria-label="ConfirmationNumberIcon">
                      <ConfirmationNumberIcon sx={{ color: '#FF7700' }} />
                    </IconButton>  
             </Stack>

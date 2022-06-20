@@ -3,17 +3,3 @@
     height: 20rem;
 }
 
-.peliculasNumber{
-    height: 20px;
-    width: 20px;
-    border-radius: 999px;
-    top: 0;
-    right: 0;
-    background-color: red;
-    font-size: 12px;
-    font-weight: bold;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
