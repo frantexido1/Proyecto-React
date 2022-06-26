@@ -12,7 +12,6 @@ import Slider from "./Components/Slider/Slider";
 
 
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
