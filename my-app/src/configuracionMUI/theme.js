@@ -15,7 +15,7 @@ const theme = createTheme({
             secondary: "rgb(255,255,255)",
         },
         mode: 'dark',
-    }}
+    },}
 )
 
 export default theme;

@@ -8,17 +8,15 @@ import Cards from './Components/Cards';
 import Peliculas from "./Components/db.json";
 import Cines4d from './Components/cines4D.js';
 import Ubicaciones from './Components/ubicaciones.js';
-import Slider from "./Components/Slider/Slider";
-
-
+import Estrenos from './Components/Estrenos.js';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <SweetAlert />
-      <Navbar/>
-      <Slider />
-      <Container sx={{ marginY: 5}}>
+        <ThemeProvider theme={theme}>
+          <SweetAlert />
+            <Navbar/>
+            <Container sx={{ marginY: 5}}>
+
               {Peliculas.map((pelicula) => (
               <>
                 <Grid container spacing={5}>
@@ -30,17 +28,21 @@ function App() {
                 </Grid>
               </>
                 ))}
+                
             </Container>
+            <Container>
+              <Estrenos />
+            </Container>
+
           <Container maxWidth="lg">
             <Cines4d />
           </Container>
           <Container maxWidth="lg">
             <Ubicaciones/>
           </Container>
-          <Footer />  
-          
-              
-    </ThemeProvider>
+
+              <Footer />  
+        </ThemeProvider>
   );
 };
 
