@@ -1,10 +1,10 @@
 import React, { useState }from 'react';
 import { AppBar, Toolbar, Typography, Tab, Tabs,  ListItemButton, useMediaQuery, useTheme, Grid } from '@mui/material/';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import IconButton from '@mui/material/IconButton'
 import MovieIcon from '@mui/icons-material/Movie';
 import DrawerComponent from './DrowerComponent';
+import Carrito from './ButtonModal/carrito';
 
 
 
@@ -24,7 +24,7 @@ export const Navbar = () => {
                 <Typography variant="button" display="block" gutterBottom sx={{marginLeft: 1, marginRight: 5, color: '#FF7700', fontSize:20}}>Numen </Typography>
                         { isMatch ? <DrawerComponent /> : (
                             <>
-                            <Grid  container>
+                            <Grid  container sx={{ fontSize: 25, color: '#FF7700' }}>
                                     <Tabs onChange={handleClickTab} textColor='secondary' indicatorColor='secondary' value={value}>
                                         <Tab label='Inicio' />
                                         <Tab label='Cartelera' />
@@ -35,15 +35,13 @@ export const Navbar = () => {
                                 </Grid>
                                     <ListItemButton>
                                         <IconButton aria-label="search" color='secondary'>
-                                            <SearchOutlinedIcon sx={{ fontSize: 25, color: '#FF7700' }}/>
+                                            <SearchOutlinedIcon />
                                         </IconButton>
                                     </ListItemButton>
 
 
                                     <ListItemButton>
-                                        <IconButton aria-label="buy" color='secondary' href='#' >
-                                            <ShoppingCartOutlinedIcon sx={{ fontSize: 25,color: '#FF7700' }}/>
-                                        </IconButton>              
+                                        <Carrito/>            
                                     </ListItemButton>
                             </>
                             )}               

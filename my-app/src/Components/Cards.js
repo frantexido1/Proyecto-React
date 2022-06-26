@@ -22,7 +22,7 @@ const Cards = ({funcion}) => {
 
 
             <Stack alignItems="center" paddingY={0.50}>
-                  <ButtonModal/>
+                  <ButtonModal  title={funcion.title} img={funcion.img} id={funcion.id}/>
             </Stack>
 
 

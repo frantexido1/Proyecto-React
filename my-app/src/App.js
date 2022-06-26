@@ -9,39 +9,42 @@ import Peliculas from "./Components/db.json";
 import Cines4d from './Components/cines4D.js';
 import Ubicaciones from './Components/ubicaciones.js';
 import Slider from "./Components/Slider/Slider";
+import CarritoContextProvider from './context/CarritoContext';
 
 
 
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <SweetAlert />
-      <Navbar/>
-      <Slider />
-      <Container sx={{ marginY: 5}}>
-              {Peliculas.map((pelicula) => (
-              <>
-                <Grid container spacing={5}>
 
-                { pelicula.funciones.map((funcion, index) => (
-                <Cards funcion={funcion} key={index}/>
-                ))}
+    <CarritoContextProvider>
+      <ThemeProvider theme={theme}>
+        <SweetAlert />
+        <Navbar/>
+        <Slider />
+        <Container sx={{ marginY: 5}}>
+                {Peliculas.map((pelicula) => (
+                <>
+                  <Grid container spacing={5}>
 
-                </Grid>
-              </>
-                ))}
-            </Container>
-          <Container maxWidth="lg">
+                  { pelicula.funciones.map((funcion, index) => (
+                  <Cards funcion={funcion} key={index}/>
+                  ))}
+
+                  </Grid>
+                </>
+                  ))}
+        </Container>
+        <Container maxWidth="lg">
             <Cines4d />
-          </Container>
-          <Container maxWidth="lg">
-            <Ubicaciones/>
-          </Container>
-          <Footer />  
-          
-              
-    </ThemeProvider>
+        </Container>
+        <Container maxWidth="lg">
+          <Ubicaciones/>
+        </Container>
+        <Footer />  
+      </ThemeProvider>
+    </CarritoContextProvider>
+
   );
 };
 

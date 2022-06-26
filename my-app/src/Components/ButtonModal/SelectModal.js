@@ -6,7 +6,6 @@ export default function SelectModal({option,title,tamaño}){
     const handleChange = (e) => {
       setCine(e.target.value);
     };
-    console.log(cine)
     return (
         <FormControl fullWidth sx={tamaño} color="secondary">
         <InputLabel id="demo-simple-select-label">{title}</InputLabel>
