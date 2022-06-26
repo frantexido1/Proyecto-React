@@ -8,6 +8,8 @@ import Cards from './Components/Cards';
 import Peliculas from "./Components/db.json";
 import Cines4d from './Components/cines4D.js';
 import Ubicaciones from './Components/ubicaciones.js';
+import Estrenos from './Components/Estrenos.js';
+
 
 function App() {
   return (
@@ -27,10 +29,12 @@ function App() {
                 </Grid>
               </>
                 ))}
+                
+            </Container>
+            <Container>
+              <Estrenos />
             </Container>
 
-
-          
           <Container maxWidth="lg">
             <Cines4d />
           </Container>
