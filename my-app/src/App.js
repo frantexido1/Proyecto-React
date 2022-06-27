@@ -1,24 +1,25 @@
 import React from 'react';
 import { ThemeProvider, Container, Grid } from '@mui/material';
-import { Navbar } from './Components/Navbar';
-import Footer from './Components/Footer.js';
+import { Navbar } from './Components/Navbar/Navbar';
+import Footer from './Components/Navbar/Footer';
 import theme from './configuracionMUI/theme';
-import SweetAlert from './Components/SweetAlert.js';
-import Cards from './Components/Cards';
+import SweetAlert from './Components/Navbar/SweetAlert.js';
+import Cards from './Components/Cards/Cards';
 import Peliculas from "./Components/db.json";
-import Cines4d from './Components/cines4D.js';
-import Ubicaciones from './Components/ubicaciones.js';
+import Cines4d from './Components/Main/cines4D';
+import Ubicaciones from './Components/Main/ubicaciones';
 import Slider from "./Components/Slider/Slider";
-import Estrenos from './Components/Estrenos.js';
+import Estrenos from './Components/Estrenos/Estrenos';
 
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <SweetAlert />
-      <Navbar/>
-      <Slider />
-      <Container sx={{ marginY: 5}}>
+        <ThemeProvider theme={theme}>
+          <SweetAlert />
+            <Navbar/>
+            <Slider/>
+            <Container sx={{ marginY: 5}}>
+
               {Peliculas.map((pelicula) => (
               <>
                 <Grid container spacing={5}>
@@ -33,7 +34,6 @@ function App() {
                 
             </Container>
 
-
           <Container maxWidth="lg">
             <Cines4d />
           </Container>
@@ -44,9 +44,7 @@ function App() {
             <Ubicaciones/>
           </Container>
           <Footer />  
-          
-              
-    </ThemeProvider>
+        </ThemeProvider>
   );
 };
 
