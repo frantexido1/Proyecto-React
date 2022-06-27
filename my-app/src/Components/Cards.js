@@ -14,7 +14,7 @@ const Cards = () => {
   return (
       <>
       {ProductData.map((product, i) => (
-     <Grid zeroMinWidth item xs={3} product={product} key={i} >
+     <Grid zeroMinWidth item xs={3} key={i} >
        <ThemeProvider theme={theme}>
         <Paper elevation={5} square sx={{color:"text.secondary"}}>
            <img src={product.img} alt="Pelicula" className="img"/>

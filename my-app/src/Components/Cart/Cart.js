@@ -43,7 +43,7 @@ useEffect(() => {
 
     return (
       <div>
-      <div onClick={() => setCartOpen(!cartOpen)}>
+      <div onClick={() =>  {setCartOpen(!cartOpen)}}>
       <div>
         {!cartOpen ? (
 

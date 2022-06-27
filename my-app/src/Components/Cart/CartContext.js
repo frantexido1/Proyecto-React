@@ -34,7 +34,7 @@ export const CartProvider = ({ children }) => {
         }
     }
 
-    const deleteItemTocart = (product) => {
+    const deleteItemToCart = (product) => {
             const inCart = cartItems.find(
                 (productInCart) => productInCart.id === product.id
             );
@@ -47,13 +47,13 @@ export const CartProvider = ({ children }) => {
                     cartItems.map((productInCart) => {
                     if (productInCart.id === product.id) {
                         return {...inCart, amount: inCart.amount - 1}
-                    } else return productInCart
+                    } else return productInCart;
                 }));
             }
         }
 
         return (
-            <CartContext.Provider value={{cartItems, addItemToCart, deleteItemTocart}}>
+            <CartContext.Provider value={{cartItems, addItemToCart, deleteItemToCart}}>
                 { children }
             </CartContext.Provider>
         )
