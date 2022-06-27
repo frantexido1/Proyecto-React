@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
-import { Drawer, List, ListItem, ListItemText, ListItemIcon } from '@mui/material/';
-import IconButton from '@mui/material/IconButton';
-=======
-import { Drawer, List, ListItem, ListItemText, ListItemIcon,Typography,IconButton} from '@mui/material/';
->>>>>>> be9a8e72a25ce9c0bf76cd5fcd9d1677d59d9880
+import { Drawer, List, ListItem, ListItemText, ListItemIcon,Typography,IconButton } from '@mui/material/';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import MovieIcon from '@mui/icons-material/Movie';
 import MenuIcon from '@mui/icons-material/Menu';

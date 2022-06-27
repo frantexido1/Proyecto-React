@@ -3,6 +3,7 @@
     "funciones": [
     {
       "id": 1,
+      "amount": 0,
       "title": "Avengers",
       "price": "$200",
       "category": "Acción",
@@ -11,6 +12,7 @@
     },
     {
         "id": 2,
+        "amount": 0,
         "title": "Scream",
         "price": "$200",
         "category": "Terror",
@@ -19,6 +21,7 @@
       },
       {
         "id": 3,
+        "amount": 0,
         "title": "Ambulance",
         "price": "$200",
         "category": "Acción",
@@ -27,6 +30,7 @@
       },
       {
         "id": 4,
+        "amount": 0,
         "title": "El hombre del norte",
         "price": "$200",
         "category": "Acción",
@@ -35,6 +39,7 @@
       },
       {
         "id": 5,
+        "amount": 0,
         "title": "Dune",
         "price": "$200",
         "category": "Ciencia ficción",
@@ -43,6 +48,7 @@
       },
       {
         "id": 6,
+        "amount": 0,
         "title": "It",
         "price": "$200",
         "category": "Terror",
@@ -51,6 +57,7 @@
       },
       {
         "id": 7,
+        "amount": 0,
         "title": "Interstellar",
         "price": "$200",
         "category": "Ciencia ficción",
@@ -59,6 +66,7 @@
       },
       {
         "id": 8,
+        "amount": 0,
         "title": "The joker",
         "price":  "$200",
         "category": "Drama",

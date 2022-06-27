@@ -1,16 +1,16 @@
 import React, { useState }from 'react';
 import { AppBar, Toolbar, Typography, Tab, Tabs,  ListItemButton, useMediaQuery, useTheme, Grid } from '@mui/material/';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+// import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import IconButton from '@mui/material/IconButton'
 import MovieIcon from '@mui/icons-material/Movie';
 import DrawerComponent from './DrowerComponent';
-
+import Cart from './Cart/Cart';
 
 
 export const Navbar = () => {
 
-    const [value, setValue] = useState(0);
+    const [ value, setValue] = useState(0);
     const handleClickTab = (e, newValue) => {setValue(newValue);};
     //responsive
     const theme = useTheme();
@@ -41,9 +41,9 @@ export const Navbar = () => {
 
 
                                     <ListItemButton>
-                                        <IconButton aria-label="buy" color='secondary' href='#' >
-                                            <ShoppingCartOutlinedIcon sx={{ fontSize: 25,color: '#FF7700' }}/>
-                                        </IconButton>              
+
+                                        <Cart/>
+
                                     </ListItemButton>
                             </>
                             )}               

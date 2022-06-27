@@ -1,4 +1,5 @@
-import { Button,Modal,Box,useTheme, Grid} from "@mui/material";
+import React from 'react'
+import { Button,Modal } from "@mui/material";
 import { Container } from "@mui/system";
 import { useState } from "react";
 import Entradas from "./Entradas";
@@ -23,7 +24,7 @@ export default function ButtonModal(){
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     // eslint-disable-next-line no-unused-vars
-    const theme = useTheme();
+
 
     const options=["Cinépolis Avellaneda","Cinépolis Merlo","Cinépolis Recoleta","Cinépolis Pilar","Cinépolis Lujan"];
     const horarios=["10:00","11:00","12:00","14:00","15:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00"];
