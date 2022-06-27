@@ -1,6 +1,6 @@
 import "./Cards.css";
 import {  ThemeProvider, Paper, Box, Grid, Typography, Stack,useTheme } from '@mui/material';
-import ButtonModal from "./ButtonModal/ButtonModal";
+import ButtonModal from "../ButtonModal/ButtonModal";
 
 
 

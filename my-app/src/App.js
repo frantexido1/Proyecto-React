@@ -1,14 +1,14 @@
 import React from 'react';
 import { ThemeProvider, Container, Grid } from '@mui/material';
-import { Navbar } from './Components/Navbar';
-import Footer from './Components/Footer.js';
+import { Navbar } from './Components/Navbar/Navbar';
+import Footer from './Components/Navbar/Footer';
 import theme from './configuracionMUI/theme';
-import SweetAlert from './Components/SweetAlert.js';
-import Cards from './Components/Cards';
+import SweetAlert from './Components/Navbar/SweetAlert.js';
+import Cards from './Components/Cards/Cards';
 import Peliculas from "./Components/db.json";
-import Cines4d from './Components/cines4D.js';
-import Ubicaciones from './Components/ubicaciones.js';
-import Estrenos from './Components/Estrenos.js';
+import Cines4d from './Components/Main/cines4D.js';
+import Ubicaciones from './Components/Main/ubicaciones.js';
+import Estrenos from './Components/Estrenos/Estrenos.js';
 
 function App() {
   return (
@@ -30,18 +30,17 @@ function App() {
                 ))}
                 
             </Container>
-            <Container>
-              <Estrenos />
-            </Container>
 
           <Container maxWidth="lg">
             <Cines4d />
           </Container>
+          <Container>
+            <Estrenos />
+          </Container>
           <Container maxWidth="lg">
             <Ubicaciones/>
           </Container>
-
-              <Footer />  
+          <Footer />  
         </ThemeProvider>
   );
 };
