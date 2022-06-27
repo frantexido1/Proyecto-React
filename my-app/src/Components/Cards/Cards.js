@@ -10,7 +10,7 @@ const Cards = ({funcion}) => {
   const theme = useTheme();
   return (
       
-     <Grid zeroMinWidth item xs={3} >
+     <Grid zeroMinWidth item xs={12} sm={3}>
        <ThemeProvider theme={theme}>
         <Paper elevation={5} square sx={{color:"text.secondary"}}>
            <img src={funcion.img} alt="Pelicula" className="img"/>
