@@ -33,9 +33,8 @@ export default function Footer() {
                 pb: 8,
             }}
         >
-            <Grid container  
-                justifyContent="space-evenly">
-                <Grid item md={6} lg={2}>
+            <Grid container justifyContent="space-evenly" >
+                <Grid item xs={12} md={6} lg={2}>
                     <Title sx={{color: '#FF7700'}} gutterBottom>About us</Title>
                     <Typography variant="caption2" sx={{color:'#FFFFFF', fontSize:13, fontStyle: 'italic' }}>Lorem ipsum dolor sit amet consectetur, adipiscing elit placerat conubia facilisis viverra, cubilia integer inceptos etiam. <br /><br />
                     (011) - 12121212 // cinema@numen.com
@@ -46,7 +45,7 @@ export default function Footer() {
                         <TwitterIcon sx={{ fontSize: 30, color: '#FF7700' , mr: 2}}/>
                     </Box>
                 </Grid>
-                <Grid item md={6} lg={1}>
+                <Grid item xs={12} md={6} lg={1}>
                 <Title sx={{color: '#FF7700'}}>Information</Title>
                         <List>
                             <ListItemText>
@@ -72,7 +71,7 @@ export default function Footer() {
                         </List>                 
                 </Grid>
                 
-                <Grid item md={6} lg={2}>
+                <Grid item xs={12} md={6} lg={2}>
                     <Title sx={{color: '#FF7700'}}>Novedades</Title>
                     <Stack>
                         <Subscribirse

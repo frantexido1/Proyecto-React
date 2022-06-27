@@ -1,10 +1,10 @@
 import { Button,Modal,useTheme,Container} from "@mui/material";
-import { useState,useContext } from "react";
+import { useState } from "react";
 import Entradas from "./Entradas";
 import SelectModal from "./SelectModal";
 import SelectModal2 from "./SelectModal2";
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import { CarritoContext } from "../../context/CarritoContext";
+
 
 const style = {
     position: 'absolute',
@@ -19,7 +19,6 @@ const style = {
 
 
 export default function ButtonModal(title,img,id){
-    const carrito = useContext(CarritoContext)
 
     const [open, setOpen] = useState(false);
 
