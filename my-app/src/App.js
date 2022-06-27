@@ -6,6 +6,7 @@ import { Navbar } from './Components/Navbar';
 import theme from './configuracionMUI/theme';
 import Slider from "./Components/Slider/Slider";
 
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
