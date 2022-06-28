@@ -1,6 +1,8 @@
 import {  Modal,Container, IconButton, Grid } from '@mui/material'
 import React, { useState } from 'react'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import Cart from '../Cart/Cart';
+
 
 const style = {
     position: 'absolute',
@@ -28,7 +30,7 @@ export default function Carrito() {
       >
         <Container maxWidth="lg" sx={style}>
             <Grid container spacing={3}>
-                
+              <Cart/>
             </Grid>
         </Container>
       </Modal>  

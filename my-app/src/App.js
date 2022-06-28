@@ -10,11 +10,12 @@ import Cines4d from './Components/Main/cines4D';
 import Ubicaciones from './Components/Main/ubicaciones';
 import Slider from "./Components/Slider/Slider";
 import Estrenos from './Components/Estrenos/Estrenos';
+import { CartProvider } from './Context/CartContext';
 
 
 function App() {
   return (
-
+      <CartProvider>
       <ThemeProvider theme={theme}>
         <SweetAlert />
         <Navbar/>
@@ -44,6 +45,7 @@ function App() {
           </Container>
           <Footer />  
         </ThemeProvider>
+        </CartProvider>
   );
 };
 
