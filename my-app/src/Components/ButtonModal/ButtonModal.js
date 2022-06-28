@@ -4,7 +4,7 @@ import Entradas from "./Entradas";
 import SelectModal from "./SelectModal";
 import SelectModal2 from "./SelectModal2";
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import { CartContext } from "../../Context/CartContext";
+
 
 
 const style = {
@@ -27,7 +27,6 @@ export default function ButtonModal(title,img,id){
 
     const handleClose = () =>{setOpen(false)} ;
 
-    const {addItemToCart} = useContext(CartContext);
 
     // eslint-disable-next-line no-unused-vars
     const theme = useTheme();
@@ -49,7 +48,7 @@ export default function ButtonModal(title,img,id){
                   <SelectModal2/>
                   <SelectModal option={horarios} title="Seleccione Horario" tamaño={{width:"50%"}}/>                  
                   <Entradas/>
-                  <Button  color="secondary" onClick={() => addItemToCart([title,img,id])}>Aceptar</Button>
+                  <Button  color="secondary" onClick={handleClose}>Aceptar</Button>
 
                 </Container>
 

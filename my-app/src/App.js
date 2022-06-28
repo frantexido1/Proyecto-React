@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ThemeProvider, Container, Grid } from '@mui/material';
 import { Navbar } from './Components/Navbar/Navbar';
 import Footer from './Components/Navbar/Footer';
@@ -10,17 +10,33 @@ import Cines4d from './Components/Main/cines4D';
 import Ubicaciones from './Components/Main/ubicaciones';
 import Slider from "./Components/Slider/Slider";
 import Estrenos from './Components/Estrenos/Estrenos';
-import { CartProvider } from './Context/CartContext';
+
 
 
 function App() {
+// desde aca hacer la llamada con un useEffect, una vez que tenga la data,
+
+const getMovies= async() =>{
+  const res= await fetch("http://localhost:3000/funciones").then(res => res.json())
+  
+}
+
+  useEffect(()=>{
+    getMovies()
+  },[])
+
+
+
+
   return (
-      <CartProvider>
       <ThemeProvider theme={theme}>
         <SweetAlert />
         <Navbar/>
         <Slider />
         <Container sx={{ marginY: 5}}>
+
+
+
                 {Peliculas.map((pelicula) => (
                 <>
                   <Grid container spacing={5}>
@@ -45,7 +61,6 @@ function App() {
           </Container>
           <Footer />  
         </ThemeProvider>
-        </CartProvider>
   );
 };
 
