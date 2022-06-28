@@ -19,7 +19,7 @@ const style = {
   };
 
 
-export default function ButtonModal(title,img,id){
+export default function ButtonModal(){
 
     const [open, setOpen] = useState(false);
 

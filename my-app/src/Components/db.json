@@ -64,6 +64,38 @@
         "category": "Drama",
         "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/poster-joker-2-1567010576.jpg"
         
+      },
+      {
+        "id": 9,
+        "title": "Dr. Strange en el multiverso de la locura",
+        "price":  "$200",
+        "category": "Acción",
+        "img": "https://www.e-wavegroup.com/uploads/i1004.jpg"
+        
+      },
+      {
+        "id": 10,
+        "title": "Top Gun: Maverick",
+        "price":  "$200",
+        "category": "Acción",
+        "img": "https://www.e-wavegroup.com/uploads/i1103.jpg"
+        
+      },
+      {
+        "id": 11,
+        "title": "Sonic 2: la película",
+        "price":  "$200",
+        "category": "Animación",
+        "img": "https://www.e-wavegroup.com/uploads/i1001.jpg"
+        
+      },
+      {
+        "id": 12,
+        "title": "Jurassic World: Dominion",
+        "price":  "$200",
+        "category": "Aventuras, Acción",
+        "img": "https://www.e-wavegroup.com/uploads/i1120.jpg"
+        
       }
     ]
  }
