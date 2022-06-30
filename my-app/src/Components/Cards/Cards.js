@@ -23,7 +23,7 @@ const Cards = ({ title, img, id, category }) => {
 
 
             <Stack alignItems="center" paddingY={0.50}>
-              <ButtonModal title={title} img={img} id={id} />
+              <ButtonModal  id={id} />
             </Stack>
 
 

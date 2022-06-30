@@ -1,10 +1,15 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 
 
-export default function CartProvider({ children }) {
+export default function CartContext({ children }) {
 
     const CartContext=createContext();
-    
+    const [fecha, setfecha] = useState([])
+
+    const valorfecha= (valor) =>{
+      setfecha(valor)
+    }
+
 
   return (
     <CartContext.Provider>
