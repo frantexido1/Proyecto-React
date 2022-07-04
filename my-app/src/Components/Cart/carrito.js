@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { useCartValue } from '../../Context/CartProvider';
 import ItemCart from './ItemCart';
-
+import { actionTypes } from "../../Hooks/CartReducer";
 
 const style = {
   position: 'absolute',
@@ -24,7 +24,12 @@ export default function Carrito() {
 
   const handleOpen = () => setOpen(true);
 
-  const handleClose = () => setOpen(false);
+  const handleClose = () => {
+    dispatch({
+      type:actionTypes.REMOVE_ALL
+    })
+    setOpen(false)
+  }
 
   return (
     <div>
