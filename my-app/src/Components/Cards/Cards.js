@@ -1,13 +1,29 @@
 import "./Cards.css";
-import { ThemeProvider, Paper, Box, Grid, Typography, Stack, useTheme } from '@mui/material';
-import ButtonModal from "../ButtonModal/ButtonModal";
+import { ThemeProvider, Paper, Box, Grid, Typography, Stack, useTheme, IconButton } from '@mui/material';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import { actionTypes } from "../../Hooks/CartReducer";
+import { useCartValue } from "../../Context/CartProvider";
 
 
-
-
-const Cards = ({ title, img, id, category }) => {
+const Cards = ({ title, img, id, category, price }) => {
 
   const theme = useTheme();
+
+  // eslint-disable-next-line no-unused-vars
+  const [{ basket }, dispatch] = useCartValue();
+
+  const addToBasket = () => {
+    dispatch({
+      type: actionTypes.ADD_TO_BASKET,
+      item: {
+        id,
+        title,
+        category,
+        price,
+        img
+      }
+    })
+  }
 
   return (
 
@@ -23,7 +39,9 @@ const Cards = ({ title, img, id, category }) => {
 
 
             <Stack alignItems="center" paddingY={0.50}>
-              <ButtonModal  id={id} />
+              <IconButton aria-label="" color="secondary" onClick={addToBasket}>
+                <ShoppingBagIcon />
+              </IconButton>
             </Stack>
 
 

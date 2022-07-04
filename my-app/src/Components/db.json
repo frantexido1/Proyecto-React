@@ -1,101 +1,88 @@
-
- {
-    "funciones": [
+{
+  "funciones": [
     {
       "id": 1,
       "title": "Avengers",
-      "price": "$200",
+      "price": 200,
       "category": "Acción",
       "img": "https://http2.mlstatic.com/D_NQ_NP_772763-MLA32388572990_102019-O.jpg"
-      
     },
     {
-        "id": 2,
-        "title": "Scream",
-        "price": "$200",
-        "category": "Terror",
-        "img": "https://www.techgames.com.mx/wp-content/uploads/2021/12/Scream-5-poster-elenco.jpg"
-        
-      },
-      {
-        "id": 3,
-        "title": "Ambulance",
-        "price": "$200",
-        "category": "Acción",
-        "img": "https://imagenes.gatotv.com/categorias/peliculas/posters/ambulancia_2022.jpg"
-        
-      },
-      {
-        "id": 4,
-        "title": "El hombre del norte",
-        "price": "$200",
-        "category": "Acción",
-        "img": "https://img.aullidos.com/imagenes/caratulas/hombre-del-norte-poster-sp.jpg"
-            
-      },
-      {
-        "id": 5,
-        "title": "Dune",
-        "price": "$200",
-        "category": "Ciencia ficción",
-        "img": "https://m.media-amazon.com/images/I/81zneOFfw3S.jpg"
-        
-      },
-      {
-        "id": 6,
-        "title": "It",
-        "price": "$200",
-        "category": "Terror",
-        "img": "https://http2.mlstatic.com/D_NQ_NP_809718-MLA41881336198_052020-O.jpg"
-        
-      },
-      {
-        "id": 7,
-        "title": "Interstellar",
-        "price": "$200",
-        "category": "Ciencia ficción",
-        "img": "https://tumbaabierta.com/wp-content/uploads/2013/12/tumbaabierta_interstellar-teaserposter.jpg"
-        
-      },
-      {
-        "id": 8,
-        "title": "The joker",
-        "price":  "$200",
-        "category": "Drama",
-        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/poster-joker-2-1567010576.jpg"
-        
-      },
-      {
-        "id": 9,
-        "title": "Dr. Strange en el multiverso de la locura",
-        "price":  "$200",
-        "category": "Acción",
-        "img": "https://www.e-wavegroup.com/uploads/i1004.jpg"
-        
-      },
-      {
-        "id": 10,
-        "title": "Top Gun: Maverick",
-        "price":  "$200",
-        "category": "Acción",
-        "img": "https://www.e-wavegroup.com/uploads/i1103.jpg"
-        
-      },
-      {
-        "id": 11,
-        "title": "Sonic 2: la película",
-        "price":  "$200",
-        "category": "Animación",
-        "img": "https://www.e-wavegroup.com/uploads/i1001.jpg"
-        
-      },
-      {
-        "id": 12,
-        "title": "Jurassic World: Dominion",
-        "price":  "$200",
-        "category": "Aventuras, Acción",
-        "img": "https://www.e-wavegroup.com/uploads/i1120.jpg"
-        
-      }
-    ]
- }
+      "id": 2,
+      "title": "Scream",
+      "price": 200,
+      "category": "Terror",
+      "img": "https://www.techgames.com.mx/wp-content/uploads/2021/12/Scream-5-poster-elenco.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Ambulance",
+      "price": 200,
+      "category": "Acción",
+      "img": "https://imagenes.gatotv.com/categorias/peliculas/posters/ambulancia_2022.jpg"
+    },
+    {
+      "id": 4,
+      "title": "El hombre del norte",
+      "price": 200,
+      "category": "Acción",
+      "img": "https://img.aullidos.com/imagenes/caratulas/hombre-del-norte-poster-sp.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Dune",
+      "price": 200,
+      "category": "Ciencia ficción",
+      "img": "https://m.media-amazon.com/images/I/81zneOFfw3S.jpg"
+    },
+    {
+      "id": 6,
+      "title": "It",
+      "price": 200,
+      "category": "Terror",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_809718-MLA41881336198_052020-O.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Interstellar",
+      "price": 200,
+      "category": "Ciencia ficción",
+      "img": "https://tumbaabierta.com/wp-content/uploads/2013/12/tumbaabierta_interstellar-teaserposter.jpg"
+    },
+    {
+      "id": 8,
+      "title": "The joker",
+      "price": 200,
+      "category": "Drama",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/poster-joker-2-1567010576.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Dr. Strange en el multiverso de la locura",
+      "price": 200,
+      "category": "Acción",
+      "img": "https://www.e-wavegroup.com/uploads/i1004.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Top Gun: Maverick",
+      "price": 200,
+      "category": "Acción",
+      "img": "https://www.e-wavegroup.com/uploads/i1103.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Sonic 2: la película",
+      "price": "$200",
+      "category": "Animación",
+      "img": "https://www.e-wavegroup.com/uploads/i1001.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Jurassic World: Dominion",
+      "price": 200,
+      "category": "Aventuras, Acción",
+      "img": "https://www.e-wavegroup.com/uploads/i1120.jpg"
+    }
+  ]
+}

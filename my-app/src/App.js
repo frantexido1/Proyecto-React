@@ -34,7 +34,7 @@ function App() {
         <Grid container spacing={3}>
 
           {data.map((pelicula, index) => (
-            <Cards title={pelicula.title} img={pelicula.img} id={pelicula.id} category={pelicula.category} key={index} />
+            <Cards title={pelicula.title} img={pelicula.img} id={pelicula.id} category={pelicula.category} price={pelicula.price} key={index} />
           ))}
 
         </Grid>

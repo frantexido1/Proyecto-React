@@ -13,11 +13,11 @@ export default function SelectModal2() {
   let fechaActual = new Date();
   const diaDeSemana = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
   const mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-  
+
 
 
   return (
-    <FormControl color="secondary" sx={{ width: "50%" }}>
+    <FormControl color="secondary" sx={{ width: "100%" }}>
       <InputLabel id="demo-simple-select-label">Seleccione Dia</InputLabel>
       <Select
         labelId="demo-simple-select-label"
@@ -25,7 +25,7 @@ export default function SelectModal2() {
         value={fecha}
         label="Seleccione Dia"
         onChange={handleChange}
-        sx={{ marginBottom: "30px", color: "text.secondary", marginRight: "10px" }}
+        sx={{ marginBottom: "30px", color: "text.secondary" }}
       >
 
         <MenuItem value={0} sx={{ color: "text.secondary" }}>{`${diaDeSemana[fechaActual.getDay()]}, ${fechaActual.getDate()} de ${mes[fechaActual.getMonth()]}`}</MenuItem>
