@@ -1,7 +1,6 @@
 import React, { useState }from 'react';
 import { AppBar, Toolbar, Typography, Tab, Tabs,  ListItemButton, useMediaQuery, useTheme, Grid } from '@mui/material/';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import IconButton from '@mui/material/IconButton'
 import MovieIcon from '@mui/icons-material/Movie';
 import DrawerComponent from './DrowerComponent';
@@ -26,19 +25,13 @@ export const Navbar = () => {
                             <>
                             <Grid  container>
                                     <Tabs onChange={handleClickTab} textColor='secondary' indicatorColor='secondary' value={value}>
-                                        <Tab label='Inicio' />
-                                        <Tab label='Cartelera' />
-                                        <Tab label='Salas' />
-                                        <Tab label='Sucursales' />
-                                        <Tab label='Contacto' />
+                                        <Tab label='Inicio' href="#Inicio" />
+                                        <Tab label='Cartelera' href="#Cartelera"/>
+                                        <Tab label='Salas' href="#Salas"/>
+                                        <Tab label='Sucursales' href="#Sucursales"/>
+                                        <Tab label='Contacto' href="#Contacto"/>
                                     </Tabs>
                                 </Grid>
-                                    <ListItemButton>
-                                        <IconButton aria-label="search" color='secondary'>
-                                            <SearchOutlinedIcon sx={{ fontSize: 25, color: '#FF7700' }}/>
-                                        </IconButton>
-                                    </ListItemButton>
-
 
                                     <ListItemButton>
                                         <IconButton aria-label="buy" color='secondary' href='#' >

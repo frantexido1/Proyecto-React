@@ -10,7 +10,8 @@ import { arrayImg } from "./arrayImg.js";
 
 export const Title = styled(Typography)(() => ({
     fontSize: 24,
-    marginBottom: '1em',
+    marginBottom: 25,
+    marginTop: 25,
     textAlign: 'center',
 }))
 
