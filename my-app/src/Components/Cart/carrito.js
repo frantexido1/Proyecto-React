@@ -1,20 +1,22 @@
-import { Modal, Container, Typography, Grid, IconButton, Button } from '@mui/material'
+import { Modal, Typography, Grid, IconButton, Button, Badge, Box } from '@mui/material'
 import React, { useState } from 'react'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { useCartValue } from '../../Context/CartProvider';
 import ItemCart from './ItemCart';
 import { actionTypes } from "../../Hooks/CartReducer";
+import { Container } from '@mui/system';
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
-  transform: 'translate(-50%, -50%)',
-  bgcolor: 'background.paper',
+  overflow: 'scroll',
+  height: '100%',
+  display: 'block',
+  bgcolor:"background.paper",
   borderRadius: '10px',
   boxShadow: 24,
-  p: 4,
-};
+}
 
 export default function Carrito() {
   // eslint-disable-next-line no-unused-vars
@@ -26,22 +28,24 @@ export default function Carrito() {
 
   const handleClose = () => {
     dispatch({
-      type:actionTypes.REMOVE_ALL
+      type: actionTypes.REMOVE_ALL
     })
     setOpen(false)
   }
 
   return (
     <div>
-      <IconButton onClick={handleOpen} color="secondary"><ShoppingCartOutlinedIcon /></IconButton>
+      <Badge badgeContent={basket.length} color="secondary">
+        <IconButton onClick={handleOpen} color="secondary"><ShoppingCartOutlinedIcon /></IconButton>
+      </Badge>
+
       <Modal
         open={open}
         onClose={handleClose}
-
+        sx={style}
       >
-        <Container maxWidth="lg" sx={style}>
-
-          <Grid container spacing={3}>
+        <Container maxWidth="lg" >
+          <Grid container spacing={3} direction="column" justifyContent="center" alignItems="center">
             <Grid item xs={12}>
               <Typography align='center' gutterBottom variant="h4" color="text.secondary">
                 Shopping Cart
