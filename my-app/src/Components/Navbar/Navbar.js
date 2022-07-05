@@ -1,22 +1,20 @@
 import React, { useState }from 'react';
 import { AppBar, Toolbar, Typography, Tab, Tabs,  ListItemButton, useMediaQuery, useTheme, Grid } from '@mui/material/';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import IconButton from '@mui/material/IconButton'
 import MovieIcon from '@mui/icons-material/Movie';
 import DrawerComponent from './DrowerComponent';
+import Carrito from '../Cart/carrito';
 
 
 
 export const Navbar = () => {
 
     const [value, setValue] = useState(0);
-    const handleClickTab = (e, newValue) => {setValue(newValue);};
-    //responsive
+    const handleClickTab = (e, newValue) => { setValue(newValue); };
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
     return (
         <>
-        <AppBar color= 'primary' position='sticky'>
+            <AppBar color='primary' position='sticky'>
                 <Toolbar>
                 <MovieIcon sx={{color:'#ff7700', fontSize: 50}}/>
                 <Typography variant="overline" display="block" gutterBottom center sx={{marginLeft: 1, color: '#FFFFFF', fontSize:20, fontFamily:300}}>Cinema </Typography>
@@ -33,13 +31,11 @@ export const Navbar = () => {
                                     </Tabs>
                                 </Grid>
 
-                                    <ListItemButton>
-                                        <IconButton aria-label="buy" color='secondary' href='#' >
-                                            <ShoppingCartOutlinedIcon sx={{ fontSize: 25,color: '#FF7700' }}/>
-                                        </IconButton>              
-                                    </ListItemButton>
-                            </>
-                            )}               
+                            <ListItemButton>
+                                <Carrito />
+                            </ListItemButton>
+                        </>
+                    )}
                 </Toolbar>
             </AppBar>
         </>

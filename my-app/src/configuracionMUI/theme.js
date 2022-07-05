@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material';
+// eslint-disable-next-line no-unused-vars
 import { palette } from '@mui/system';
 
 
