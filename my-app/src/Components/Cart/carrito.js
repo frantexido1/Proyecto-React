@@ -13,7 +13,7 @@ const style = {
   overflow: 'scroll',
   height: '100%',
   display: 'block',
-  bgcolor:"background.paper",
+  bgcolor: "background.paper",
   borderRadius: '10px',
   boxShadow: 24,
 }
@@ -26,13 +26,11 @@ export default function Carrito() {
 
   const handleOpen = () => setOpen(true);
 
-  const handleClose = () => {
-    dispatch({
-      type: actionTypes.REMOVE_ALL
-    })
-    setOpen(false)
-  }
+  const removeAll = () => dispatch({
+    type: actionTypes.REMOVE_ALL
+  })
 
+  const handleClose = () =>setOpen(false);
   return (
     <div>
       <Badge badgeContent={basket.length} color="secondary">
@@ -56,7 +54,7 @@ export default function Carrito() {
               <ItemCart key={product.id} product={product} />
             ))}
             <Grid item xs={12}>
-              <Button variant="contained" color="secondary" onClick={handleClose}>
+              <Button variant="contained" color="secondary" onClick={removeAll}>
                 Finalizar Compra
               </Button>
             </Grid>

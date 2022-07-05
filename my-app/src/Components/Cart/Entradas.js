@@ -15,7 +15,7 @@ export default function Entradas(price) {
                 <ButtonGroup orientation="horizontal" variant="contained" size="medium" >
                     <Button variant="contained" color="secondary" onClick={() => setValor(valor + 1)}><AddIcon /></Button>
                     <Button variant="outlined" color="secondary" onClick={() => setValor(1)}>{valor}</Button>
-                    <Button variant="contained" color="secondary" onClick={() => setValor(valor - 1)}><RemoveIcon /></Button>
+                    <Button disabled={valor===0} variant="contained" color="secondary" onClick={() => setValor(valor - 1)}><RemoveIcon /></Button>
                 </ButtonGroup>
             </Grid>
             <Grid item xs={12}>
